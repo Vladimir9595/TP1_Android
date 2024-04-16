@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/myContentLinearLayoutButtonsAddAndSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:onClick="onAddClick"
+            />
+        <Button
+            android:id="@+id/subButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/sub"
+            android:onClick="onSubClick"
+            />
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/myContentLinearLayoutShowButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/showToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pop"
+            android:onClick="onShowToastClick"
+            />
+        <Button
+            android:id="@+id/showSnack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/snack"
+            android:onClick="onShowSnackBarClick"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/openActivityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dip"
+        android:padding="20dip"
+        android:layout_margin="5dip">
+
+        <LinearLayout
+            android:id="@+id/myContentLinearLayoutOpenActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/openActivityOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activityOne"
+                android:onClick="onOpenActivityClicked"
+                />
+            <Button
+                android:id="@+id/openActivityTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/activityTwo"
+                android:onClick="onOpenActivityTwoClicked"
+                />
+
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/resultFromActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
